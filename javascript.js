@@ -180,7 +180,89 @@ console.log(newText);
 //let newText = text.replace(/Microsoft/g, "W3Schools");
 
 
+//comparing strings
+const a = "a";
+const b = "b";
+if (a < b){
+    console.log(`${a} is less than ${b}`);
+}else if (a > b) {
+    console.log(`${a} is greater than ${b}`)
+} else{
+    console.log(`${a} and ${b} are equal`)
+}
 
+//practice from javascript.info/logical-operators
+let userName = prompt("Who's there?", '');
+
+if (userName ==='Admin') {
+    let pass = prompt('Password?', '');
+
+    if (pass === 'The Master'){
+        alert( 'Welcome!' );
+    } else if(pass === '' || pass === null) {
+        alert( 'Canceled' );
+    } else {
+        alert( 'Wrong Password' );
+    }
+} else if (userName === '' || userName === null) {
+    alert( 'Canceled' );
+} else {
+    alert( "I don't know you" )
+}
+
+//practice from javascript.info/ifelse
+let accessAllowed;
+let age = prompt('How old are you?', '');
+
+if (age > 18) {
+    accessAllowed = true;
+} else {
+    accessAllowed = false;
+}
+
+alert(accessAllowed);
+
+let realName = prompt('What is the "Official" name of JavaScript?')
+
+if (realName == "ECMAScript"){
+    alert('Right!');
+} else {
+    alert('You don\'t know? ECMAScript');
+}
+
+let value = prompt('Type a number', 0);
+
+if (value > 0) {
+  alert( 1 );
+} else if (value < 0) {
+  alert( -1 );
+} else {
+  alert( 0 );
+}
+
+/* change this to use ? instead of if/else
+let result;
+
+if (a + b < 4) {
+  result = 'Below';
+} else {
+  result = 'Over';
+}
+*/
+
+let result1 = (a + b < 4) ? 'Below' : 'Over';
+
+let message;
+
+if (login == 'Employee') {
+    message = 'Hello';
+} else if (login == 'Director') {
+    message = 'Greetings';
+} else if (login == ''){
+    message = 'No login';
+} else {
+    message = '';
+}
 
 
 
